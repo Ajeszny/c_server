@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en, pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Summer school</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="botstyle.css">
+</head>
+
+<body>
+
+<header>
+  <a href="index.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+  <h1>Summer school</h1>
+  <br>
+
+<nav>
+  <div class="button-row">
+    <a href="Programs.html"><button class="shitbitchdie">Programs</button></a>
+    <a href="PY.html"><button class="shitbitchdie">Previous</button></a>
+    <a href="Info.html"><button class="shitbitchdie">Information</button></a>
+    <a href="https://p.lodz.pl/"><button class="shitbitchdie">University</button></a>
+    <a href="Other.html"><button class="shitbitchdie">Other</button></a>
+  </div>
+</nav>
+
+  <div class="button">
+    <a href="index2.html"><button class="shitbitchdie">EN/PL</button></a>
+  </div>
+
+  <div class="enter">
+    <a href="Submit.html"><button class="shitbitchdie">Submit</button></a>
+    <a href="Login.html"><button class="shitbitchdie">Login</button></a>
+  </div>
+</header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="slideshow-container">
+
+  <a href="Info.html"><img src="main1.jpg" class="p1" alt="shit"></a>
+
+</div>
+
+<script>
+  let slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function nextSlide()
+  {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(nextSlide, 5500);
+</script>
+
+<div class="main1">
+  <div class="right-text">
+    <br>
+    <br>
+    <h1>About us</h1>
+    <h3>We are the largest and most ambitious summer school in all of Europe!</h3>
+    <h3>Our main and only sponsor is <a href="https://p.lodz.pl">Łódź Polytechnic,</a></h3>
+    <h3>from which you get nice bonuses</h3>
+    <h3>You get a real and useful experience in physics, chemistry,</h3>
+    <h3>and math from studying at our school!</h3>
+    <h3>In addition, thanks to the large number of students from other countries</h3>
+    <h3>- you get a real opportunity to learn a lot of new things!</h3>
+    <h3>You also get incredible experiences and amazing journeys with us!</h3>
+    <h3>We are waiting just for you!</h3>
+
+    <div class="float">
+      <br>
+      <h3>Any questions?</h3>
+      <div class="floattext">
+        <h4>You can phone us using two different phones:</h4>
+        <ul>
+          <li>+48 786 348 763</li>
+        </ul>
+        <ul>
+          <li>+48 786 348 760</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="left-slide">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="slideshow1-container">
+      <div class="slide1 active">
+        <a href="PY.html"><img src="new1.jpg" class="p11" alt="shit"></a>
+      </div>
+      <div class="slide1">
+        <a href="PY.html"><img src="new2.jpg" class="p21" alt="ur"></a>
+      </div>
+      <div class="slide1">
+        <a href="PY.html"><img src="new3.jpg" class="p31" alt="self"></a>
+      </div>
+    </div>
+
+
+    <div class="slideshow2-container">
+      <div class="slide2 active">
+        <h3>There you can read Alex story!</h3>
+      </div>
+      <div class="slide2">
+        <h3>There you can read about Romanian family!</h3>
+      </div>
+      <div class="slide2">
+        <h3>You can read Martin's emotions here!</h3>
+      </div>
+    </div>
+
+    <div class="slideshow3-container">
+      <div class="slide3 active">
+        <a href="Other.html"><img src="zak1.jpg" class="z1" alt="kill"></a>
+      </div>
+      <div class="slide3">
+        <a href="Other.html"><img src="zak2.jpg" class="z2" alt="ur"></a>
+      </div>
+      <div class="slide3">
+        <a href="Other.html"><img src="zak3.jpg" class="z3" alt="lol"></a>
+      </div>
+    </div>
+
+    <div class="slideshow4-container">
+      <div class="slide4 active">
+        <h3>There you can read about weather in Zakopane!</h3>
+      </div>
+      <div class="slide4">
+        <h3>There you can read facts about Zakopane!</h3>
+      </div>
+      <div class="slide4">
+        <h3>You can read tips about mountains!</h3>
+      </div>
+    </div>
+
+    <div class="sometext">
+    <iframe class="bot" id="chatbox-iframe" src="bot.html" width="330" height="430"></iframe>
+    <!-- JavaScript code to attach the click event listener -->
+    <script>
+      // Get the iframe element by its ID
+      const chatboxIframe = document.getElementById("chatbox-iframe");
+
+      // Access the iframe's content window and document
+      const iframeWindow = chatboxIframe.contentWindow;
+      const iframeDocument = iframeWindow.document;
+
+      // Get reference to the chat box element within the iframe
+      const chatBox = iframeDocument.getElementById("chat-box");
+
+      // Attach the click event listener to the chat box element
+      chatBox.addEventListener("click", function() {
+        // Your click event handler logic here
+        console.log("Chat box clicked!");
+      });
+    </script>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  let slides3 = document.querySelectorAll('.slide3');
+  let currentSlide3 = 0;
+
+  function nextSlide3()
+  {
+    slides3[currentSlide3].classList.remove('active');
+    currentSlide3 = (currentSlide3 + 1) % slides3.length;
+    slides3[currentSlide3].classList.add('active');
+  }
+
+  setInterval(nextSlide3, 5500);
+</script>
+
+<footer>
+  <a href="index.html"><img src="logo.jpg" class="logo" alt="logo"></a>
+  <h1>Summer school</h1>
+
+  <div class="right-down-text1">
+    <h4>vdoronchenkov@gmail.com</h4>
+    <h4>245122@p.edu.lodz.pl</h4>
+  </div>
+
+  <div class="right-down-text2">
+    <h4>+48 786 348 763</h4>
+    <h4>+48 786 348 760</h4>
+  </div>
+
+</footer>
+
+
+
+<script>
+  let slides1 = document.querySelectorAll('.slide1');
+  let currentSlide1 = 0;
+
+  function nextSlide1()
+  {
+    slides1[currentSlide1].classList.remove('active');
+    currentSlide1 = (currentSlide1 + 1) % slides1.length;
+    slides1[currentSlide1].classList.add('active');
+  }
+
+  setInterval(nextSlide1, 5500);
+</script>
+
+<script>
+  let slides2 = document.querySelectorAll('.slide2');
+  let currentSlide2 = 0;
+
+  function nextSlide2()
+  {
+    slides2[currentSlide2].classList.remove('active');
+    currentSlide2 = (currentSlide2 + 1) % slides2.length;
+    slides2[currentSlide2].classList.add('active');
+  }
+
+  setInterval(nextSlide2, 5500);
+</script>
+
+<script>
+  let slides4 = document.querySelectorAll('.slide4');
+  let currentSlide4 = 0;
+
+  function nextSlide4()
+  {
+    slides4[currentSlide4].classList.remove('active');
+    currentSlide4 = (currentSlide4 + 1) % slides4.length;
+    slides4[currentSlide4].classList.add('active');
+  }
+
+  setInterval(nextSlide4, 5500);
+</script>
+
+</body>
+
+</html>
