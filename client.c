@@ -16,7 +16,7 @@ int main() {
         perror("Server is not running");
         return 1;
     }
-    char to_send[] = "Siemanko Duch", hello[1337];
+    char to_send[] = "Hi", hello[1337];
     send(fd, to_send, strlen(to_send) + 1, 0);
     read(fd, hello, 1337);
     printf("%s", hello);
