@@ -37,7 +37,6 @@ int main() {
 
     listen(fd, 3);
     while(1) {
-        //const char* response = "<!DOCTYPE HTML> I am going to have gay sex with you";
         char* response = load_file_from_disk("index.html");
         int len = strlen(response);
         int acceptor_fd = accept(fd, &cock, &μαλακασ);
